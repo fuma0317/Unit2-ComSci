@@ -15,6 +15,6 @@ define valuable redLED as 13 in Arduino
 **11/13 Reflection**
 Today I made the system which counts binary with LEDs in groups and I learned how to use %
 And also I learned how to convert decimal to binary, binary to decimal as homework.
-![binarytodecimal](IMG_
+![binarytodecimal](IMG_0236.JPG)
 
 
