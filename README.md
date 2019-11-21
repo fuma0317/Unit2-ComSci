@@ -67,7 +67,42 @@ void setup()
 }
 void loop()
 {
-  stateA = digital
+  stateA = digitalRead(but1);
+  stateB = digitalRead(but2);
+  if((!stateA && sttateB) || (stateA && stateB)){
+    digitalWrite(out2, HIGH);
+  }else{
+    digitalWrite(out2, LOW);
+  }
+}
+```
+*CODE for EX-NOR*
+```
+int but1 = 13;
+int but2 = 12;
+int out1 = 3;
+int out2 = 4;
+
+int stateA = 0, stateB = 0,
+
+void setup()
+{
+  pinmode(but1, INPUT);
+  pinmode(but2, INPUT);
+  pinmode(out1, OUTPUT);
+  pinmode(out2, OUTPUT);
+}
+void loop()
+{
+  stateA = digitalRead(but1);
+  stateB = digitalRead(but2);
+  if((!stateA && !stateB) || (stateA && stateB)){
+    digitalWrite(out1, HIGH);
+  }else{
+    digitalWrite(out1, LOW);
+  }
+}
+```
 
 
 **11/19 Reflection**
