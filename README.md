@@ -49,6 +49,25 @@ void loop()
   }
 }
 ```
+*CODE for EX-OR gate*
+```
+int but1 = 13;
+int but2 = 12;
+int out1 = 3;
+int out2 = 4;
+
+int state A =0, stateB = 0,
+
+void setup()
+{
+  pinmode(but1, INPUT);
+  pinmode(but2, INPUT);
+  pinmode(out1, OUTPUT);
+  pinmode(out2, OUTPUT);
+}
+void loop()
+{
+  stateA = digital
 
 
 **11/19 Reflection**
