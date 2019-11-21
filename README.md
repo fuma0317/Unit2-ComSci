@@ -22,8 +22,7 @@ Steps shows how to convert binary to decimal
 Today I learned how to show the diagram of logicgate, make equation from the graph and make true table for them.  I felt this is one of the hardest topic that I have leaned in Comsci class so it took long time to understand how it works.
 ![logicgate](IMG_0257.JPG)
 
-And also I made some code for them
-*OR*
+*CODE for OR gate*
 ```
 int but1 = 13;
 int but2 = 12;
