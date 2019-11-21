@@ -22,6 +22,36 @@ Steps shows how to convert binary to decimal
 Today I learned how to show the diagram of logicgate, make equation from the graph and make true table for them.  I felt this is one of the hardest topic that I have leaned in Comsci class so it took long time to understand how it works.
 ![logicgate](IMG_0257.JPG)
 
+And also I made some code for them
+*OR*
+```
+int but1 = 13;
+int but2 = 12;
+int out1 = 3;
+int out2 =4;
+
+int stateA = 0, stateB =0,
+
+void setup()
+{
+  pinmode(but1, INPUT);
+  pinmode(but2, INPUT);
+  pinmode(out1, OUTPUT);
+  pinmode(out2, OUTPUT);
+}
+void loop()
+{
+  stateA = digitalRead(but1);
+  stateB = digitalRead(but2);
+  if(stateA || stateB){
+    digitalWrite(out2, HIGH);
+  }else{
+    digitalWrite(out2, LOW);
+  }
+}
+```
+
+
 **11/19 Reflection**
 Today I worked on the system shows 0 to 7 with 7 LEDs in Arduino. And I finally got how truw table and equation actually work.
 I had a lot of fun making the system because the topic is really familiar with me and pretty easy to understand.
