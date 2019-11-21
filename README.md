@@ -26,7 +26,7 @@ Today I learned how to show the diagram of logicgate, make equation from the gra
 Today I worked on the system shows 0 to 7 with 7 LEDs in Arduino. And I finally got how truw table and equation actually work.
 I had a lot of fun making the system because the topic is really familiar with me and pretty easy to understand.
 Table shows 7 segments converted from decimal
-!
+![7segmentstable](IMG_0258.JPG)
 
 
 
