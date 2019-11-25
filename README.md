@@ -111,6 +111,14 @@ I had a lot of fun making the system because the topic is really familiar with m
 Table shows 7 segments converted from decimal
 ![7segmentstable](IMG_0258.JPG)
 
+**What is usability?**
+
+**what is HCD?**
+feedback
+discoverability
+YouTube "It's not bad doors are everywhere"
+
+
 
 
 
