@@ -134,11 +134,16 @@ HCD stands for "Human Centered Design" which means not making product based on i
 ```
 **DISCOVERABILITY**
 ```
-is a prime component when you make a good design. If the product interact with users, you have to consider "discoverablity". Discoverability is a design which is focused on making users aware of "what is happening", "what happened" and "what is able to be done"
+is a prime component when you make a good design. 
+If the product interact with users, you have to consider "discoverablity". 
+Discoverability is a design which is focused on making users aware of 
+"what is happening", "what happened" and "what is able to be done"
 ```
 **FEEDBACK**
 ```
-FEEDBACK is a important factor of discoverability because it is a indicator to make users notice if it works as users did by giving some reactions.
+FEEDBACK is a important factor of discoverability because 
+it is a indicator to make users notice if it works as users did 
+by giving some reactions.
 ```
 
 What is the volatile data type in Arduino
