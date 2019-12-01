@@ -112,9 +112,15 @@ Table shows 7 segments converted from decimal
 ![7segmentstable](IMG_0258.JPG)
 
 **What is usability?**
-The definition of "usability" is 
+The definition of "usability" is
+```
+Extent to which a product can be used
+```
+And also it should meet the standard which is ISO 9241-11
 
 **what is HCD?**
+
+
 feedback
 discoverability
 YouTube "It's not bad doors are everywhere"
