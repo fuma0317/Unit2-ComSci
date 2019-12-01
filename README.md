@@ -119,11 +119,27 @@ Extent to which a product can be used
 And also it should meet the standard which is ISO 9241-11
 
 **what is HCD?**
+```
+HCD stands for "Human Centered Design" which means not making product based on itself or technology but rather making product based on the needs of users.
 
-
-feedback
-discoverability
-YouTube "It's not bad doors are everywhere"
+4 steps compose HCD Process
+1. RESERCH
+  Reserch the usage stats and clarify them
+2. ANALYZE
+  Analyze the needs of the users and clarify them
+3. CREATE
+  Create some solutions which meet their needs
+4. EVALUATE
+  Evaluate the solutions which made in third process 
+```
+**DISCOVERABILITY**
+```
+is a prime component when you make a good design. If the product interact with users, you have to consider "discoverablity". Discoverability is a design which is focused on making users aware of "what is happening", "what happened" and "what is able to be done"
+```
+**FEEDBACK**
+```
+FEEDBACK is a important factor of discoverability because it is a indicator to make users notice if it works as users did by giving some reactions.
+```
 
 What is the volatile data type in Arduino
 
