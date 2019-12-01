@@ -112,7 +112,7 @@ Table shows 7 segments converted from decimal
 ![7segmentstable](IMG_0258.JPG)
 
 **11/20 Reflection**
-Today 
+Today I started off by watching a video about HCD. I didn't know that there are many kinds of design and there are many ways to make a good impacts on users.                    
 **What is usability?**
 The definition of "usability" is
 ```
@@ -147,8 +147,9 @@ FEEDBACK is a important factor of discoverability because
 it is a indicator to make users notice if it works as users did 
 by giving some reactions.
 ```
+**11/22 Reflection**
+Today I started to work on the system which converts 2 buttons to English. And I came up with a idea that shows the table below. In order to make the system available, I need to know how to count how many times I pushed and create the table which contains a to z and number 1 to 9 and "delete" and "enter".
 
-What is the volatile data type in Arduino
 
 
 
