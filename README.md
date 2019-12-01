@@ -112,6 +112,7 @@ Table shows 7 segments converted from decimal
 ![7segmentstable](IMG_0258.JPG)
 
 **What is usability?**
+The definition of "usability" is 
 
 **what is HCD?**
 feedback
