@@ -122,7 +122,8 @@ And also it should meet the standard which is ISO 9241-11
 
 **what is HCD?**
 ```
-HCD stands for "Human Centered Design" which means not making product based on itself or technology but rather making product based on the needs of users.
+HCD stands for "Human Centered Design" which means not making product based on itself or technology but 
+rather making product based on the needs of users.
 
 4 steps compose HCD Process
 1. RESERCH
