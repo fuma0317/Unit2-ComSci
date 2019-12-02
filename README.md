@@ -155,6 +155,8 @@ Today I started to work on the system which converts 2 buttons to English. And I
 I wrote the sample code Dr.Pinzon explained below
 ![screansamplecode](スクリーンショット 2019-12-02 0.04.44.JPG)
 
+what is interruption
+
 
 
 
