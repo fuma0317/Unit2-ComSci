@@ -200,6 +200,19 @@ if(indexRow>0){
  **How to convert hexadecimal to binary**
  ![conversionfromhextobin](IMG_1021.JPG)
  *SETP1*
+ Write down the hex number. If there are any, change the hex values represented by letters to their decimal equivalents.
+ 
+ *STEP2*
+ Each hex digit represents four binary digits and therefore is equal to a power of 2. The rightmost digit equals to 2^0(1), the next one equals to2^1(2), the next one eqauls to 2^2(4) and the leftmost one equals to 2^3(8). Write these numbers(8, 4, 2 and 1)below the hex values.
+ 
+*STEP3*
+Determine which powers of two(8, 4, 2 or 1)sum up to your hex digits. For example, if one of your hex values is 10, this means 8 and 2 sum up to 10(4 and 1 are not used). If your hex number is 2, only 2 is used; 8, 4 and 1 are not.
+
+*STEP4*
+Write down 1 below those 8, 4, 2 and 1's that are used. Write down 0 below those that are not used.
+
+*STEP5*
+Read the 1's and 0's from left to right to get the binary equivalent of the given hex number.
  
   
 
