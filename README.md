@@ -198,6 +198,8 @@ if(indexRow>0){
  float(32bit): signed number from -3.4028235E38 to 3.4028235E38
  ```
  **How to convert hexadecimal to binary**
+ ![conversionfromhextobin](IMG_1021.JPG)
+ *SETP1*
  
   
 
