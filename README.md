@@ -213,6 +213,12 @@ Write down 1 below those 8, 4, 2 and 1's that are used. Write down 0 below those
 
 *STEP5*
 Read the 1's and 0's from left to right to get the binary equivalent of the given hex number.
+
+**What is byte and bit?**
+Bit stands for BINARY DIGITS which is the smallest unit of data in a computer. A bit has single binary value, either 1 or 0.
+```
+8 bits = 1 byte
+```
  
   
 
