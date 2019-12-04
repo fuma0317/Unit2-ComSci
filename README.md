@@ -223,7 +223,7 @@ Bit stands for BINARY DIGITS which is the smallest unit of data in a computer. A
 **11/27 Reflection**
 Today, I started off by making a group(earth, moon, mars) and make a actual system which converts binary to English.
 We assigned our works and Uzay and I were in charge of making arduino. We struggled to connect the parts to base because we have never tried to connect lcd.
-![progressgroup](IMG_0314.jPG)
+![progressgroup](IMG_0314.JPG)
   
 
 
