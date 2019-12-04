@@ -219,7 +219,9 @@ Bit stands for BINARY DIGITS which is the smallest unit of data in a computer. A
 ```
 8 bits = 1 byte
 ```
- 
+
+**11/27 Reflection**
+
   
 
 
