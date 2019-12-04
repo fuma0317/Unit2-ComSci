@@ -183,6 +183,22 @@ void buttonApressed(){
 if(indexRow>0){
   indexRow=0; //loop back to first row
   ```
+ 
+ **11/25 Reflection**
+ Today I learned variety of data types and how to convert hexadecimal to binary
+ ```
+ DATA TYPES
+ char(8bit): signed number from -128 to 127
+ unsigned char(8bit): unsigned number from 0 to 255
+ int(16bit): signed number from -32768 to 32767
+ unsigned int(16bit): unsigned number from 0 to 65535
+ long(32bit): signed number from -2,147,483,648 to 2,147,483,647
+ unsigned long(32bit): unsigned number from 0 to -4,294,967,295
+ boolean(8bit): simple logical true/false
+ float(32bit): signed number from -3.4028235E38 to 3.4028235E38
+ ```
+ **How to convert hexadecimal to binary**
+ 
   
 
 
