@@ -151,9 +151,39 @@ by giving some reactions.
 **11/22 Reflection**
 Today I started to work on the system which converts 2 buttons to English. And I came up with a idea that shows the table below. In order to make the system available, I need to know how to count how many times I pushed and create the table which contains a to z and number 1 to 9 and "delete" and "enter".
 ![table2buttons](IMG_0310.JPG)
-Basically, number which is on a vertical line shows times you pushed butA and number which is horizontal line shows times you pushed butB. For example, if you push butA twice and butB once, it shows "
+Basically, number which is on a vertical line shows times you pushed butA and number which is horizontal line shows times you pushed butB. For example, if you push butA twice and butB once, it shows "A"
 
-I wrote the sample code Dr.Pinzon explained below
+I wrote the sample code Dr.Pinzon explained below for the table system
+```
+int col = 3;
+int row = 3;
+int indexRow = 0;
+int indexCol = 0;
+String keyboard[row][col] = {
+  {"e", "t", "a"},
+  {"0", "9", "x"},
+  {"DL", "ST", "OK"}
+}
+
+void setup()
+{
+  pinmode(13, OUTPUT);
+  Serial.begin(9600);
+  attachInterruption(0, buttonApressed, RISING);
+}
+
+void loop()
+{
+Serial.println("Selected letter is: "+keyboard[indexRow][indexCol]);
+}
+//This function changes the row in the keyboard
+void buttonApressed(){
+  indexRow++;
+//check for the max row number
+if(indexRow>0){
+  indexRow=0; //loop back to first row
+  ```
+  
 
 
 
