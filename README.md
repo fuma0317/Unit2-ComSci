@@ -148,6 +148,9 @@ FEEDBACK is a important factor of discoverability because
 it is a indicator to make users notice if it works as users did 
 by giving some reactions.
 ```
+
+### PROJECT ###
+
 **11/22 Reflection**
 Today I started to work on the system which converts 2 buttons to English. And I came up with a idea that shows the table below. In order to make the system available, I need to know how to count how many times I pushed and create the table which contains a to z and number 1 to 9 and "delete" and "enter".
 ![table2buttons](IMG_0310.JPG)
