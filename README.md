@@ -878,6 +878,7 @@ void bintoeng(int sum){
 Manuals
 -----------
 
+
 Evaluation
 -----------
 **TEST 1   English input and converting to binary**
