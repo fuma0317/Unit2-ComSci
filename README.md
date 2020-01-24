@@ -220,13 +220,112 @@ Bit stands for BINARY DIGITS which is the smallest unit of data in a computer. A
 8 bits = 1 byte
 ```
 
+### PROTOCOLS ###
+**HTTP**
+Stands for: hypertext transfer protocol
+Used: it is used by the World Wide Web and defines how messages are formatted and transmitted.
+
 **11/27 Reflection**
 Today, I started off by making a group(earth, moon, mars) and make a actual system which converts binary to English.
 We assigned our works and Uzay and I were in charge of making arduino. We struggled to connect the parts to base because we have never tried to connect lcd.
 ![progressgroup](IMG_0314.JPG)
 
 **Coding "English Input System"**
-We first focused on English Input System which allows users to type Alphabet in LCD and send it to moon. Lauricenia was mainly in charge of this program. The first program which uses two rows. One is to show alphabet A to Z, numbers and other one is to show which alphabet or numbers user picked. The program was working well but we realized that 
+We first focused on English Input System which allows users to type Alphabet in LCD and send it to moon. Lauricenia was mainly in charge of this program. The first program which uses two rows. One is to show alphabet A to Z, numbers and other one is to show which alphabet or numbers user picked. 
+
+Code for English Input System
+```
+// include the library code:
+#include <LiquidCrystal.h>
+int index = 0; 
+// add all the letters and digits to the keyboard
+String keyboard[]={"SENT", "DEL", "SPACE", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", };
+
+int numOptions = 39; //size of keyboard
+
+String text = "";//variable to store input
+
+
+// initialize the library with the numbers of the interface pins
+LiquidCrystal lcd(12, 11, 5, 4, 9, 8);
+
+void setup() {
+  // set up the LCD's number of columns and rows:
+  lcd.begin(16, 2);
+  // Print a message to the LCD.
+  attachInterrupt(0, changeLetter, RISING);//button A in port 2
+  attachInterrupt(1, selected, RISING);//button B in port 3
+}
+
+void loop() {
+  //start lcd
+  // set the cursor to column 0, line 1
+  // (note: line 1 is the second row, since counting begins with 0):
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  //print keyboard option
+  lcd.print(keyboard[index]);
+  lcd.setCursor(0, 1);
+  //print input
+  lcd.print(text);
+  delay(100);
+}
+
+//This function changes the letter in the keyboard
+void changeLetter(){
+  //debouce button
+  static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  if (interrupt_time - last_interrupt_time > 200)
+  {
+  
+    last_interrupt_time = interrupt_time;// If interrupts come faster than 200ms
+    index++;
+      //check for the max row number
+    if(index==numOptions){
+      index=0; //loop back to first row
+    } 
+ }
+}
+
+//this function adds the letter to the text or send the msg
+void selected(){
+  static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  if (interrupt_time - last_interrupt_time > 200)
+  {
+  
+    last_interrupt_time = interrupt_time;// If interrupts come faster than 200ms
+    
+    String key = keyboard[index];
+    //if DEL is selected, the last character stored in the "text" variable is deleted
+    if (key == "DEL")
+    {
+      int len = text.length();
+      text.remove(len-1);
+    }
+    //if SENT is selected, the "text" variable is emptied
+    else if(key == "SENT")
+    {
+      text="";
+    }
+    //if SPACE is selected, a space is added to the "text" variable
+    else if(key == "SPACE")
+    { 
+      text += " ";
+    }
+    //if any othe roption(characters and numbers) are selected, they are stored to the "text" variable
+    else{
+      text+= key;
+    }
+    //after any option is selected, the program loops back to the first option
+    index = 0; 
+  }
+  
+  
+}
+```
+
 
 
   
