@@ -260,7 +260,13 @@ Design
 
 ***Flow chart for English Input System***
 ![flowchartenginput](English Input System.JPG)
+I can't upload the pic so can you jump from Unit-2 ComSci and pic is uploaded there. Sorry...
 
+***Flow chart for English to Binary System***
+I can't upload the pic so can you jump from Unit-2 ComSci and pic is uploaded there. Sorry...
+
+***Flow chart for Binary to English System***
+I can't upload the pic so can you jump from Unit-2 ComSci and pic is uploaded there. Sorry...
 
 Development
 -------------
