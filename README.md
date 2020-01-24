@@ -226,7 +226,7 @@ We assigned our works and Uzay and I were in charge of making arduino. We strugg
 ![progressgroup](IMG_0314.JPG)
 
 **Coding "English Input System"**
-We first focused on English Input System which allows users to type Alphabet in LCD and send it to moon. Lauricenia was mainly in charge of this program. The first program we made was working but 
+We first focused on English Input System which allows users to type Alphabet in LCD and send it to moon. Lauricenia was mainly in charge of this program. The first program which uses two rows. One is to show alphabet A to Z, numbers and other one is to show which alphabet or numbers user picked. The program was working well but we realized that 
 
 
   
