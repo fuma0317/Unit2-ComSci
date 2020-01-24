@@ -271,7 +271,7 @@ We assigned our works and Uzay and I were in charge of making arduino. We strugg
 
 We first focused on English Input System which allows users to type Alphabet in LCD and send it to "English to Binary system". Keitaro was mainly in charge of this program. The first program which uses two rows. One is to show alphabet A to Z, numbers and other one is to show which alphabet or numbers user picked. 
 
-Code for English Input System
+Code for "English Input System"
 ```
 // include the library code:
 #include <LiquidCrystal.h>
@@ -363,13 +363,12 @@ void selected(){
   
 }
 ```
-**FLOW CHART FOR ENGLISH INPUT SYSTEM** 
 
+***Coding "English to Binary"***
 
-**Coding "English to Binary"**
 We secondly focused on the system which converts English to Binary. It reads the alphabets users typed in "English Input System" and converts them into Binary to turn the light on and off. Lauricenia was mainly in charge of this program. We were going to reffer to ASCII for table which converts English to Binary but we ended up making our own binary numbers.  
 
-Code for English to Binary system
+Code for "English to Binary system"
 ```
 String engtext= "THIS IS A TEST";
 int lightBulb1=6;
@@ -600,7 +599,7 @@ void binToLightBulb(char x[]){
 We finally focused on "Binary to English System" which converts Binary to English.
 Users look at the light that shows the message from moon and if the light is on, it is  counted as 1 and the light is off, it is counted as 0. And the system allows users to get alphabet if the binary read from lights are typed by them. I was mainly in charge of this program. This is basically opposite of the "English to Binary system" as the same table which converts English and binary is used.
 
-Code for Binary to English system
+Code for "Binary to English system"
 ```
 // include the library code:
 #include <LiquidCrystal.h>
@@ -875,7 +874,18 @@ void bintoeng(int sum){
   }
 }
 ```
-  
+ 
+Manuals
+-----------
+
+Evaluation
+-----------
+**TEST 1   English input and converting to binary**
+・ check if the LCD displays alphabets and numbers clicked by users by two buttons
+・ type "THIS IS A TEST" by clicking the right button
+・ Choose "SLECT" and check if the signals from lights are corresponding to binary converted by alphabets
+
+**
 
 
 
