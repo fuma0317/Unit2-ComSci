@@ -881,11 +881,20 @@ Manuals
 Evaluation
 -----------
 **TEST 1   English input and converting to binary**
-・ check if the LCD displays alphabets and numbers clicked by users by two buttons
+
+・ check if the LCD displays options clicked by users by the left button
+
 ・ type "THIS IS A TEST" by clicking the right button
+
 ・ Choose "SLECT" and check if the signals from lights are corresponding to binary converted by alphabets
 
-**
+**TEST 2   Binary input and converting to English**
+
+・ check if the LCD displays options clicked by users by the left button
+
+・ Type the binary converted from alphabets in previous system
+
+・ check if the LCD displays the message "THIS IS A TEST" corresponding to binary which is previously entered 
 
 
 
