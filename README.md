@@ -326,7 +326,234 @@ void selected(){
 }
 ```
 
+**Coding "English to Binary"**
 
+Code for English to Binary system
+```
+String engtext= "THIS IS A TEST";
+int lightBulb1=6;
+int lightBulb2=7;
+char toconvert;
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(lightBulb1,OUTPUT);
+  pinMode(lightBulb2,OUTPUT);
+}
+
+void loop()
+{
+  //separate the message in characters
+  for ( int n=0; n < engtext.length(); n++)
+  {
+   toconvert= engtext.charAt(n);
+    Serial.println(toconvert); 
+    //send character to engtobin function to convert it to binary
+     engTobin(toconvert);
+  }
+  digitalWrite(lightBulb2, LOW);
+  delay(2000);
+  digitalWrite(lightBulb1, HIGH);
+  digitalWrite(lightBulb2, HIGH);
+  delay(100);
+  digitalWrite(lightBulb1, LOW);
+  digitalWrite(lightBulb2, LOW);
+  
+  
+  while(1)
+  {
+    //stop loop 
+  }
+}
+//function to convert the character into binary
+void engTobin(char x)
+{
+  switch(toconvert)
+  {
+    //every character has a binary representation
+    case 'A':
+      Serial.println("000001");
+      binToLightBulb("000001");
+      break;
+    case 'B':
+      Serial.println("000010");
+      binToLightBulb("000010");
+      break;
+    case 'C':
+      Serial.println("000011");
+      binToLightBulb("000011");
+      break;
+    case 'D':
+      Serial.println("000100");
+      binToLightBulb("000100");
+      break;
+    case 'E':
+      Serial.println("000101");
+      binToLightBulb("000101");
+      break;
+    case 'F':
+      Serial.println("000110");
+      binToLightBulb("000110");
+      break;
+    case 'G':
+      Serial.println("000111");
+      binToLightBulb("000111");
+      break;
+    case 'H':
+      Serial.println("001000");
+      binToLightBulb("001000");
+      break;
+    case 'I':
+      Serial.println("001001");
+      binToLightBulb("001001");
+      break;
+    case 'J':
+      Serial.println("001010");
+      binToLightBulb("001010");
+      break;
+    case 'K':
+      Serial.println("001011");
+      binToLightBulb("001011");
+      break;
+    case 'L':
+      Serial.println("001100");
+      binToLightBulb("001100");
+      break;
+    case 'M':
+      Serial.println("001101");
+      binToLightBulb("001101");
+      break;
+    case 'N':
+      Serial.println("001110");
+      binToLightBulb("001110");
+      break;
+    case 'O':
+      Serial.println("001111");
+      binToLightBulb("001111");
+      break;
+    case 'P':
+      Serial.println("010000");
+      binToLightBulb("010000");
+      break;
+    case 'Q':
+      Serial.println("010001");
+      binToLightBulb("010001");
+      break;
+    case 'R':
+      Serial.println("010010");
+      binToLightBulb("010010");
+      break;
+    case 'S':
+      Serial.println("010011");
+      binToLightBulb("010011");
+      break;
+    case 'T':
+      Serial.println("010100");
+      binToLightBulb("010100");
+      break;
+    case 'U':
+      Serial.println("010101");
+      binToLightBulb("010101");
+      break;
+    case 'V':
+      Serial.println("010110");
+      binToLightBulb("000010");
+      break;
+    case 'W':
+      Serial.println("010111");
+      binToLightBulb("010111");
+      break;
+    case 'X':
+      Serial.println("011000");
+      binToLightBulb("011000");
+      break;
+    case 'Y':
+      Serial.println("011001");
+      binToLightBulb("011001");
+      break;
+     case 'Z':
+      Serial.println("011010");
+      binToLightBulb("011010");
+      break; 
+    case '1':
+      Serial.println("011011");
+      binToLightBulb("011011");
+      break;
+    case '2':
+      Serial.println("011100");
+      binToLightBulb("011100");
+      break; 
+    case '3':
+      Serial.println("011101");
+      binToLightBulb("011101");
+      break; 
+    case '4':
+      Serial.println("011110");
+      binToLightBulb("011110");
+      break; 
+    case '5':
+      Serial.println("011111");
+      binToLightBulb("011111");
+      break; 
+    case '6':
+      Serial.println("100000");
+      binToLightBulb("100000");
+      break;
+    case '7':
+      Serial.println("100001");
+      binToLightBulb("100001");
+      break;
+    case '8':
+      Serial.println("100010");
+      binToLightBulb("100010");
+      break; 
+     case '9':
+      Serial.println("100011");
+      binToLightBulb("100011");
+      break;
+     case '0':
+      Serial.println("100100");
+      binToLightBulb("100100");
+      break;
+      case ' ':
+      Serial.println("100101");
+      binToLightBulb("100101");
+      break; 
+    default:
+      digitalWrite(lightBulb1, LOW);
+    
+    
+  }
+    
+}
+
+//show binary through lamps 
+void binToLightBulb(char x[]){
+ 
+  for(int i=0; i < 6;i++){
+    //this is the clock, ON
+    digitalWrite(lightBulb1,HIGH);
+    
+    //read one bit of the msg
+    char bit = x[i];
+    Serial.println(bit);
+    
+    //when binary equals 0 turn lamp on(buzzers work the opposite way);
+    if (bit=='0'){
+      digitalWrite(lightBulb2, HIGH);
+    }else{
+      digitalWrite(lightBulb2, LOW);
+    }
+    //wait a second
+    delay(1000);
+    //turn off CLOCK
+    digitalWrite(lightBulb1,LOW);
+    delay(1000);
+  }
+  
+}
+```
 
   
 
