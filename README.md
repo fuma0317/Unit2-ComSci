@@ -258,6 +258,9 @@ We decided to use Arduino for this project because Arduino allows us to implemen
 Design
 -------------
 
+***Flow chart for English Input System***
+![flowchartenginput](
+
 Development
 -------------
 
