@@ -561,7 +561,7 @@ void binToLightBulb(char x[]){
 
 **Coding for "Binary to English" System**
 We finally focused on "Binary to English System" which converts Binary to English.
-Users look at the light that shows the message from moon and if the light is on, it is  counted as 1 and the light is off, it is counted as 0. And the system allows users to get alphabet if the binary read from lights are typed by them. I was mainly in charge of this program.
+Users look at the light that shows the message from moon and if the light is on, it is  counted as 1 and the light is off, it is counted as 0. And the system allows users to get alphabet if the binary read from lights are typed by them. I was mainly in charge of this program. This is basically opposite of the "English to Binary system" as the same table which converts English and binary is used.
 
 Code for Binary to English system
 ```
