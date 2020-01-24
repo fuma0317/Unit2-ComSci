@@ -877,6 +877,26 @@ void bintoeng(int sum){
  
 Manuals
 -----------
+**English to Binary**
+
+This is the manual of how to use our “English to binary” arduino.
+
+This program has 2 input buttons with color blue and red.
+With 2 output light that shows binary code.
+
+By pressing the blue button, you can scroll through the options. 
+Options are “send” “del” “space” “a” “b”.....”z”
+When you accidentally pass through the option you want to select, you have to start the loop again to scroll.
+
+By pressing the red button you can select the options. You cursor is on “send” option and press red button, the program will send the text you inputted.
+
+After you send the text you inputted, the output light will blink. This will show the text you typed in binary code.
+
+One light will blink on a regular basis, this light is used as counter. This will blink to show the knot of the code.
+
+Other light will blink to show the binary code.
+For example, “A” is “000001” in binary. This case the light will pause first 5 blink of the counter clock and blink once for the last count.
+
 
 
 Evaluation
