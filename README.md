@@ -225,6 +225,9 @@ Today, I started off by making a group(earth, moon, mars) and make a actual syst
 We assigned our works and Uzay and I were in charge of making arduino. We struggled to connect the parts to base because we have never tried to connect lcd.
 ![progressgroup](IMG_0314.JPG)
 
+**Coding "English Input System"**
+We first focused on English Input System which allows users to type Alphabet in LCD and send it to moon. Lauricenia was mainly in charge of this program. The first program we made was working but 
+
 
   
 
