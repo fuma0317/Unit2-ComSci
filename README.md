@@ -148,26 +148,6 @@ FEEDBACK is a important factor of discoverability because
 it is a indicator to make users notice if it works as users did 
 by giving some reactions.
 ```
-
-Unit3 MARS PROJECT
-==================
-
-A systems conmunicating between Earth, Moon and Mars
-
-Contents
------------
-  1. [Planning](#planning)
-  1. [Design](#design)
-  1. [Development](#development)
-  1. [Manuals](#manuals)
-  1. [Evaluation](#evaluation)
-  
-Planning
-------------
-**Defining the problem**
-
-We are going to create systems that allows users cammunicating between Earth, Moon and Mars. Keitaro, Lauricenia and I are in charge of Mars part. The system should work with lights to send and get messages. And also the message should be conveyed by binary.
-
 **11/22 Reflection**
 Today I started to work on the system which converts 2 buttons to English. And I came up with a idea that shows the table below. In order to make the system available, I need to know how to count how many times I pushed and create the table which contains a to z and number 1 to 9 and "delete" and "enter".
 ![table2buttons](IMG_0310.JPG)
@@ -244,6 +224,42 @@ Bit stands for BINARY DIGITS which is the smallest unit of data in a computer. A
 **HTTP**
 Stands for: hypertext transfer protocol
 Used: it is used by the World Wide Web and defines how messages are formatted and transmitted.
+
+
+Unit3 MARS PROJECT
+==================
+
+A systems conmunicating between Earth, Moon and Mars
+
+Contents
+-----------
+  1. [Planning](#planning)
+  1. [Design](#design)
+  1. [Development](#development)
+  1. [Manuals](#manuals)
+  1. [Evaluation](#evaluation)
+  
+Planning
+------------
+**Defining the problem**
+
+We are going to create systems that allows users cammunicating between Earth, Moon and Mars. Keitaro, Lauricenia and I are in charge of Mars part. The system should work with lights to send and get messages. And also the message should be conveyed by binary.
+
+### Solution proposed 
+We decided to use Arduino for this project because Arduino allows us to implement scripts with actual buttons, screens and light so that it is possible to send and get messages.
+
+### Success Criteria
+1. User can type Alphabets in LCD 
+1. Alphabets user typed is converted into Binary
+1. Lights works based on binary converted from alphabets user typed
+1. Binary is converted into Alphabets
+1. Each process is simple and easy for users
+
+Design
+-------------
+
+Development
+-------------
 
 **11/27 Reflection**
 Today, I started off by making a group(earth, moon, mars) and make a actual system which converts binary to English.
