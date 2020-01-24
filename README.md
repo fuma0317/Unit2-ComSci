@@ -234,7 +234,7 @@ We assigned our works and Uzay and I were in charge of making arduino. We strugg
 ![progressgroup](IMG_0314.JPG)
 
 **Coding "English Input System"**
-We first focused on English Input System which allows users to type Alphabet in LCD and send it to moon. Lauricenia was mainly in charge of this program. The first program which uses two rows. One is to show alphabet A to Z, numbers and other one is to show which alphabet or numbers user picked. 
+We first focused on English Input System which allows users to type Alphabet in LCD and send it to "English to Binary system". Keitaro was mainly in charge of this program. The first program which uses two rows. One is to show alphabet A to Z, numbers and other one is to show which alphabet or numbers user picked. 
 
 Code for English Input System
 ```
@@ -330,6 +330,7 @@ void selected(){
 ```
 
 **Coding "English to Binary"**
+We secondly focused on the system which converts English to Binary. It reads the alphabets users typed in "English Input System" and converts them into Binary to turn the light on and off. Lauricenia was mainly in charge of this program.   
 
 Code for English to Binary system
 ```
@@ -559,6 +560,8 @@ void binToLightBulb(char x[]){
 ```
 
 **Coding for "Binary to English" System**
+We finally focused on "Binary to English System" which converts Binary to English.
+Users look at the light that shows the message from moon and if the light is on, it is  counted as 1 and the light is off, it is counted as 0. And the system allows users to get alphabet if the binary read from lights are typed by them. I was mainly in charge of this program.
 
 Code for Binary to English system
 ```
