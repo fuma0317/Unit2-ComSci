@@ -259,7 +259,8 @@ Design
 -------------
 
 ***Flow chart for English Input System***
-![flowchartenginput](
+![flowchartenginput](English Input System.png)
+
 
 Development
 -------------
