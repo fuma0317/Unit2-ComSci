@@ -149,7 +149,24 @@ it is a indicator to make users notice if it works as users did
 by giving some reactions.
 ```
 
-### PROJECT ###
+Unit3 MARS PROJECT
+==================
+
+A systems conmunicating between Earth, Moon and Mars
+
+Contents
+-----------
+  1. [Planning](#planning)
+  1. [Design](#design)
+  1. [Development](#development)
+  1. [Manuals](#manuals)
+  1. [Evaluation](#evaluation)
+  
+Planning
+------------
+**Defining the problem**
+
+We are going to create systems that allows users cammunicating between Earth, Moon and Mars. Keitaro, Lauricenia and I are in charge of Mars part. The system should work with lights to send and get messages. And also the message should be conveyed by binary.
 
 **11/22 Reflection**
 Today I started to work on the system which converts 2 buttons to English. And I came up with a idea that shows the table below. In order to make the system available, I need to know how to count how many times I pushed and create the table which contains a to z and number 1 to 9 and "delete" and "enter".
