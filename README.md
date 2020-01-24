@@ -328,6 +328,8 @@ void selected(){
   
 }
 ```
+**FLOW CHART FOR ENGLISH INPUT SYSTEM** 
+
 
 **Coding "English to Binary"**
 We secondly focused on the system which converts English to Binary. It reads the alphabets users typed in "English Input System" and converts them into Binary to turn the light on and off. Lauricenia was mainly in charge of this program. We were going to reffer to ASCII for table which converts English to Binary but we ended up making our own binary numbers.  
