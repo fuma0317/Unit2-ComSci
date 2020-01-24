@@ -558,6 +558,283 @@ void binToLightBulb(char x[]){
 }
 ```
 
+**Coding for "Binary to English" System**
+
+Code for Binary to English system
+```
+// include the library code:
+#include <LiquidCrystal.h>
+int index = 0; 
+// add all options to the keyboard
+String keyboard[]={"SEND","DEL", "0", "1"};
+
+int numOptions = 4; //size of keyboard
+
+String bin = ""; //where the binary will be stored(input) in string data format
+
+long int todecode; //binary number in int data format
+
+int bidigit; //digit of the binary number
+
+int decimal; //decimal representation of the binary number
+
+int i; //iteration
+
+String text;
+// initialize the library with the numbers of the interface pins
+LiquidCrystal lcd(12, 11, 5, 4, 9, 8);
+
+void setup() {
+  // set up the LCD's number of columns and rows:
+  lcd.begin(16, 2);
+  Serial.begin(9600);
+  //set interrupts
+  attachInterrupt(0, changeLetter, RISING);//button A in port 2
+  attachInterrupt(1, selected, RISING);//button B in port 3
+}
+
+void loop() {
+  
+  // (note: line 1 is the second row, since counting begins with 0):
+  //clear lcd
+  lcd.clear();
+  //set the cursor to column 0, line 0 and print keyboard option
+  lcd.setCursor(0, 0);
+  lcd.print(keyboard[index]);
+  //set the cursor to column 6, line 1 and print binary input message
+  lcd.setCursor(6, 0);
+  lcd.print(bin);
+  //set the cursor to column 0, line 1 and print the text converted from binary input 
+  lcd.setCursor(0, 1);
+  lcd.print(text);
+  
+  delay(100);
+}
+
+//This function changes the keyboard option
+void changeLetter(){
+  //debouce function
+  static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+ 
+  if (interrupt_time - last_interrupt_time > 200)
+  {
+  
+    last_interrupt_time = interrupt_time;// If interrupts come faster than 200ms, assum
+    index++;
+      //check for the max row number
+    if(index==numOptions){
+      index=0; //loop back to first row
+    } 
+ }
+}
+
+//this function adds the letter to the text or send the msg
+void selected(){
+ //debounce function
+  static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  if (interrupt_time - last_interrupt_time > 200)
+  {
+  
+    last_interrupt_time = interrupt_time;// If interrupts come faster than 200ms
+    
+    String key = keyboard[index];
+    //if DEL is selected, the last character stored in the "bin" variable is deleted
+    if (key == "DEL")
+    {
+      int len = text.length();
+      text.remove(len-1);
+    }
+    //if SENT is selected, the binary is converted to decimal
+    else if(key == "SEND")
+    {
+      todecode = bin.toInt();
+      while (todecode > 0) {
+        remainder = todecode % 10;
+          
+        bidigit = decimal + bidigit * ( 0.5 + pow(2,i) );
+        
+        todecode = todecode / 10;
+        i++;
+      }
+      Serial.println(decimal);
+      //The decimal is sent to the bintoeng function
+      bintoeng(decimal);
+      //the input is set to empty again
+      bin = " ";
+      //restart all the variables in the conversion process
+      decimal=0;
+      i=0;
+      delay(100); 
+    }
+    ////if any of the numbers are selected, they are stored to the "bin" variable
+    else{
+      bin+= key;
+    }
+    index = 0; //restart the index
+  }
+  
+  
+}
+
+//function to convert decimal to character
+void bintoeng(int sum){
+  //each decimal represent a binary that represents a character
+  switch(sum){
+  case 1:
+    Serial.println("A");
+    text += "A";
+    break;
+  case 2:
+    Serial.println("B");
+    text += "B";  
+    break;
+  case 3:
+    Serial.println("C");
+    text += "C";  
+    break;
+  case 4:
+    Serial.println("D");
+    text += "D";
+    break;
+  case 5:
+    Serial.println("E");
+    text += "E";  
+    break;
+  case 6:
+    Serial.println("F");
+    text += "F"; 
+    break;
+  case 7:
+    Serial.println("G");
+    text += "G";
+    break;
+  case 8:
+    Serial.println("H");
+    text += "H";  
+    break;
+  case 9:
+    Serial.println("I");
+    text += "I";
+    break;
+  case 10:
+    Serial.println("J");
+    text += "J"; 
+    break;
+  case 11:
+    Serial.println("K");
+    text += "K";
+    break;
+  case 12:
+    Serial.println("L");
+    text += "L"; 
+    break;
+  case 13:
+    Serial.println("M");
+    text += "M"; 
+    break;
+  case 14:
+    Serial.println("N");
+    text += "N";
+    break;
+  case 15:
+    Serial.println("O");
+    text += "O";
+    break;
+  case 16:
+    Serial.println("P");
+    text += "P";
+    break;
+  case 17:
+    Serial.println("Q");
+    text += "Q";
+     break;
+  case 18:
+    Serial.println("R");
+    text += "R";
+     bin = " ";
+    break;
+  case 19:
+    Serial.println("S");
+    text += "S";
+    break;
+  case 20:
+    Serial.println("T");
+    text += "T";
+    break;
+  case 21:
+    Serial.println("U");
+    text += "U";
+    break;
+  case 22:
+    Serial.println("V");
+    text += "V";
+     bin = " ";
+    break;
+  case 23:
+    Serial.println("W");
+    text += "W"; 
+    break;
+  case 24:
+    Serial.println("X");
+    text += "X";
+    break;
+  case 25:
+    Serial.println("Y");
+    text += "Y"; 
+    break;
+  case 26:
+    Serial.println("Z");
+    text += "Z";
+    break;
+  case 27:
+    Serial.println("1");
+    text += "1";
+    break;
+  case 28:
+    Serial.println("2");
+    text += "2"; 
+    break;
+  case 29:
+    Serial.println("3");
+    text += "3";
+    break;
+  case 30:
+    Serial.println("4");
+    text += "4";
+    break;
+  case 31:
+    Serial.println("5");
+    text += "5";
+    break;
+  case 32:
+    Serial.println("6");
+    text += "6";
+    break;
+  case 33:
+    Serial.println("7");
+    text += "7";
+    break;
+  case 34:
+    Serial.println("8");
+    text += "8";
+    break;
+  case 35:
+    Serial.println("9");
+    text += "9";
+    break;
+  case 36:
+    Serial.println("0");
+    text += "0";
+    break;
+  case 37:
+    Serial.println(" ");
+    text += " ";
+    break;
+  }
+}
+```
   
 
 
