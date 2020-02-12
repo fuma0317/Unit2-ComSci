@@ -226,7 +226,7 @@ Stands for: hypertext transfer protocol
 Used: it is used by the World Wide Web and defines how messages are formatted and transmitted.
 
 
-Unit3 MARS PROJECT
+Unit2 MARS PROJECT
 ==================
 
 A systems conmunicating between Earth, Moon and Mars
